@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 { color: #ff4d6d; }
+    </style>
+</head>
+<body>
+
+<h1>📊 Valentine Stats</h1>
+
+<p><strong>YES:</strong> <span id="yesCount">0</span></p>
+<p><strong>NO:</strong> <span id="noCount">0</span></p>
+
+<button onclick="resetStats()">Reset</button>
+
+<script>
+    function loadStats() {
+        document.getElementById("yesCount").innerText =
+            localStorage.getItem("yesCount") || 0;
+
+        document.getElementById("noCount").innerText =
+            localStorage.getItem("noCount") || 0;
+    }
+
+    function resetStats() {
+        localStorage.setItem("yesCount", 0);
+        localStorage.setItem("noCount", 0);
+        loadStats();
+    }
+
+    loadStats();
+</script>
+
+</body>
+</html>

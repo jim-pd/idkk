@@ -1,61 +1,40 @@
 body {
   text-align: center;
-  font-family: "Segoe UI", Arial, sans-serif;
-  margin-top: 60px;
-  height: 100vh;
-  overflow: hidden;
-  background: #fff;
-  color: #333;
+  font-family: Arial, sans-serif;
+  margin-top: 50px;
 }
 
 img {
-  width: 220px;
-  border-radius: 14px;
-  margin-bottom: 20px;
-}
-
-#question {
-  position: relative;
-}
-
-h1 {
-  font-size: 26px;
-  font-weight: 500;
-  margin-bottom: 25px;
+  width: 260px;
+  border-radius: 14px; /* λίγο πιο soft */
 }
 
 button {
-  font-size: 15px;
-  padding: 8px 18px;
-  margin: 6px;
+  font-size: 17px; /* ελάχιστα πιο μικρό */
+  padding: 9px 20px;
+  margin: 10px;
   cursor: pointer;
-  border-radius: 999px;
-  border: 1px solid transparent;
-  transition: all 0.25s ease;
+  border-radius: 10px; /* πιο smooth */
+  border: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 #yes {
-  background-color: #ff6b81;
+  background-color: #ff4d6d;
   color: white;
 }
 
 #yes:hover {
-  background-color: #ff4d6d;
+  transform: scale(1.06);
+  box-shadow: 0 6px 14px rgba(255, 77, 109, 0.35);
 }
 
 #no {
-  background-color: #f2f2f2;
+  background-color: #e0e0e0; /* λίγο πιο elegant grey */
   color: #555;
-  border: 1px solid #ddd;
   position: absolute;
 }
 
 #no:hover {
-  background-color: #e6e6e6;
-}
-
-#result {
-  display: none;
-  font-size: 22px;
-  font-weight: 500;
+  transform: scale(0.97);
 }

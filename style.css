@@ -6,15 +6,15 @@ body {
 
 img {
   width: 260px;
-  border-radius: 14px; /* λίγο πιο soft */
+  border-radius: 14px; 
 }
 
 button {
-  font-size: 17px; /* ελάχιστα πιο μικρό */
+  font-size: 17px; 
   padding: 9px 20px;
   margin: 10px;
   cursor: pointer;
-  border-radius: 10px; /* πιο smooth */
+  border-radius: 10px; 
   border: none;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -30,7 +30,7 @@ button {
 }
 
 #no {
-  background-color: #e0e0e0; /* λίγο πιο elegant grey */
+  background-color: #e0e0e0; 
   color: #555;
   position: absolute;
 }
@@ -38,3 +38,4 @@ button {
 #no:hover {
   transform: scale(0.97);
 }
+

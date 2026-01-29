@@ -6,12 +6,16 @@ window.onload = function () {
   const questionDiv = document.getElementById("question");
   const resultDiv = document.getElementById("result");
 
-  const SHEET_URL = "https://script.google.com/macros/s/AKfycbz1zREmzSbmRfcYNqyDA7DvU6uRxN_um1D_NsP3_GFiIMGNljA-aV4PQ74F4Dq0wJUQ/exec";
+  const SHEET_URL =
+    "https://script.google.com/macros/s/AKfycbz1zREmzSbmRfcYNqyDA7DvU6uRxN_um1D_NsP3_GFiIMGNljA-aV4PQ74F4Dq0wJUQ/exec";
 
   function sendAnswer(answer) {
     fetch(SHEET_URL, {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      mode: "no-cors",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
       body: "answer=" + answer
     });
   }
@@ -41,5 +45,3 @@ window.onload = function () {
     resultDiv.style.display = "block";
   };
 };
-
-

@@ -2,6 +2,8 @@ body {
     text-align: center;
     font-family: Arial, sans-serif;
     margin-top: 50px;
+    height: 100vh;
+    overflow: hidden;
 }
 
 img {
@@ -16,15 +18,14 @@ button {
     cursor: pointer;
     border-radius: 8px;
     border: none;
-    transition: transform 0.3s;
 }
 
 #yes {
     background-color: #ff4d6d;
     color: white;
-    transform: scale(1);
 }
 
 #no {
     background-color: #ccc;
+    position: absolute;
 }

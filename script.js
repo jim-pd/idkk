@@ -41,4 +41,5 @@ window.onload = function () {
     resultDiv.style.display = "block";
   };
 };
-};
+
+
